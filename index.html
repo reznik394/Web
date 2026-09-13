@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- Для того щоб працював HTML -->
+<html lang="uk"> <!-- Підключення укр мови можна написать UA або ukr і все що в середині html буде показуватись на сайті як main в c++ -->
+<head> <!-- Містить заголовок сторінки, підключення стилів CSS, мета-теги і іншу інформацію -->
+  <meta charset="UTF-8"> <!-- Для сприйняття сойтом і,ї,є -->
+  <title>Форма реєстрації</title> <!-- Встановлює назву сторінки -->
+</head>
+<body> <!-- Визначає основний вміст сторінки, який відображається на екрані користувача -->
+<h1>Реєстрація користувача </h1> <!-- h1 Перша стрічка(головний заголовок сторінки) -->
+<form action="https://webhook.site/"  method="post"> <!-- from-початок форми, action-адреса куди будуть надіслані введені дані, method-указує що дані форми надсилатимуться методом POST.-->
+
+  <label for="first_name">Ім’я:</label> <!-- Створює напис Ім’я: для поля введення, з атрибутом for="first-name" -->
+  <input
+          type="text"
+          id="first-name"
+          name="first_name"
+  > <!-- type-дозволяє вводити звичайний текст, id-унікальний ідентифікатор, name-назва, під якою введене ім’я надсилається на сервер, required-поле обов’язково потрібно заповнити -->
+  <br></br> <!-- переводить текст на новий рядок -->
+
+  <label for= "last_name" >Прізвище:</label>
+  <input
+          type="text"
+          id="last-name"
+          name="last_name"
+  >
+  <br></br>
+
+  <label for="email">Електронна пошта:</label>
+  <input
+          type="email"
+          id="email"
+          name="email"
+  > <!-- type="email" для введння пошти -->
+  <br></br>
+
+  <label for="password">Пароль:</label>
+  <input
+          type="password"
+          id="password"
+          name="password"
+  > <!-- type="password" поле для введення паролю -->
+  <br></br>
+
+  <label for="confirm-password">Підтвердження пароль:</label>
+  <input
+          type="password"
+          id="confirm-password"
+          name="confirm_password"
+  >
+  <br></br>
+
+  <label for="birth-date">Дата народження:</label>
+  <input
+          type="date"
+          id="birth-date"
+          name="birth_date"
+  > <!-- type="date" табличка з датами -->
+  <br></br>
+
+  <label for="gender">Стать:</label>
+  <select id="gender" name="gender"> <!-- select-створює випадний список -->
+    <option value="">Оберіть стать</option> <!-- option-добавляє варіанти в списку -->
+    <option value="male">Чоловіча</option> <!-- value-означає що значення ще не вибране -->
+    <option value="female">Жіноча</option>
+    <option value="other">Інша</option>
+  </select>
+  <br></br>
+
+  <input
+          type="submit"
+          name="submit"
+          value="Зареєструватися"
+  > <!--  type="submit"-після натискання надсилає дані форми за адресою, вказаною в action -->
+  <!-- name="submit"-назва кнопки в запиті -->
+</form>
+</body>
+</html>
