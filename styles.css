@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+    color: #222;
+}
+
+header, footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #203c60;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a, footer a {
+    color: white;
+}
+
+main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #203c60;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+a {
+    color: #165bb5;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #203c60;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eef3fa;
+}
+
+/* Лабораторна робота */
+
+body > h1 {
+    padding: 0 15px;
+    text-align: center;
+    color: #203c60;
+}
+
+form {
+    box-sizing: border-box;
+    width: calc(100% - 30px);
+    max-width: 470px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+form input, form select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    background-color: white;
+    color: #222;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+form input:focus, form select:focus {
+    outline: 2px solid #316bc2;
+    outline-offset: 2px;
+}
+
+form input[type="submit"] {
+    padding: 12px;
+    background-color: #203c60;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #316bc2;
+}
