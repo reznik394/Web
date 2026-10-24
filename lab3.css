@@ -4,7 +4,7 @@
 
 body{
     margin: 0;
-    front-family: Arial sans-serif;
+    font-family: Arial sans-serif;
     background-color: #f9f9f9;
     color:#0f0f0f;
 }
@@ -36,7 +36,7 @@ a{
     white-space: nowrap;
 }
 
-logo sub{
+.logo sub{
     font-size: 10px;
     color: #666;
 }
