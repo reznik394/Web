@@ -4,82 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моє Портфоліо</title>
+    <title>Моє портфоліо</title>
     <link rel="stylesheet" href="lab5.css">
 </head>
 <body>
     <header class="container" id="home">
-        <a class="logo" href="#home">ДР.</a>
         <nav>
+            <a href="#home">Головна</a>
             <a href="#works">Роботи</a>
-            <a href="#about">Про мене</a>
+            <a href="#blog">Блог</a>
+            <a href="#contact">Контакти</a>
         </nav>
     </header>
 
     <main>
         <section class="hero container">
             <div class="hero-text">
-                <p class="label">ПОРТФОЛІО / 2026</p>
-                <h1>ДМИТРО<br>РЄЗНІК<span>.</span></h1>
-                <p class="intro">Студент, який цікавиться вебдизайном, створенням сайтів і власними проєктами.</p>
-                <a class="text-link" href="#works">Переглянути роботи →</a>
+                <h1>Привіт, я Дмитро,<br>студент</h1>
+                <p>Це моє портфоліо. Тут я ділюся навчальними роботами, власними проєктами та досвідом створення дизайну.</p>
+                <a class="button" href="#works">Переглянути роботи</a>
             </div>
-            <div class="hero-image">
-                <img src="images/39.png" alt="Портфоліо">
-                <p>WEB DESIGN / STUDENT PROJECTS</p>
+            <img class="avatar" src="images/39.png" alt="Фото">
+        </section>
+
+        <section class="blog" id="blog">
+            <div class="container">
+                <h2>Останні записи</h2>
+                <div class="blog-list">
+                    <article class="blog">
+                        <h3>Створення дизайну YouTube</h3>
+                        <p class="blog-meta">24 жовтня 2026 <span>|</span> Дизайн</p>
+                        <p>Робота над оформленням інтерфейсу та підбором елементів дизайну.</p>
+                    </article>
+                    <article class="blog">
+                        <h3>Планер</h3>
+                        <p class="blog-meta">7 листопада 2026 <span>|</span> Планер</p>
+                        <p>Створення простого й зрозумілого макета для планування справ.</p>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section class="projects container" id="works">
-            <div class="section-heading">
-                <h2>Мої роботи</h2>
-                <p>01 - 03</p>
-            </div>
+        <section class="works container" id="works">
+            <h2>Мої роботи</h2>
 
-            <div class="project-grid">
-                <article class="project first">
-                    <img src="images/aeruta.jpg" alt="Переклад гри">
-                    <div class="project-info">
-                        <h3>Переклад гри</h3>
-                        <p>01 / Локалізація</p>
-                    </div>
-                    <p>Робота з перекладом ігрових текстів українською мовою.</p>
-                </article>
+            <article class="work">
+                <img src="images/aeruta.jpg" alt="Гра">
+                <div>
+                    <h3>Переклад гри</h3>
+                    <p class="work-meta"><span class="year">2026</span> Переклад</p>
+                    <p>Робота з українським перекладом гри.</p>
+                </div>
+            </article>
 
-                <article class="project">
-                    <img src="images/shrift.png" alt="Шрифт">
-                    <div class="project-info">
-                        <h3>Дизайн шрифтів</h3>
-                        <p>02 / Типографіка</p>
-                    </div>
-                    <p>Оформлення українських літер і робота зі стилем символів.</p>
-                </article>
+            <article class="work">
+                <img src="images/Portfolio.jpg" alt="Портфоліо">
+                <div>
+                    <h3>Моє портфоліо</h3>
+                    <p class="work-meta"><span class="year">2026</span> Сайт</p>
+                    <p>Вебсторінка з моїми роботами, записами та контактною інформацією.</p>
+                </div>
+            </article>
 
-                <article class="project">
-                    <img src="images/Portfolio.jpg" alt="Портфоліо2">
-                    <div class="project-info">
-                        <h3>Моє портфоліо</h3>
-                        <p>03 / Вебсайт</p>
-                    </div>
-                    <p>Сторінка з інформацією про мене та мої навчальні проєкти.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="about" id="about">
-            <div class="container about-content">
-                <p class="label">ТРОХИ ПРО МЕНЕ</p>
-                <h2>Люблю створювати<br>українське.</h2>
-                <p>Я навчаюся працювати з HTML і CSS, створюю вебсторінки.</p>
-            </div>
+            <article class="work">
+                <img src="images/shrift.png" alt="Шрифт">
+                <div>
+                    <h3>Дизайн шрифтів</h3>
+                    <p class="work-meta"><span class="year">2026</span> Типографіка</p>
+                    <p>Оформлення українських символів.</p>
+                </div>
+            </article>
         </section>
     </main>
 
-    <footer class="container" id="contact">
-        <p>ДМИТРО РЄЗНІК</p>
-        <p>Навчальне портфоліо · 2026</p>
+    <footer id="contact">
+        <h2>Контакти</h2>
+        <p>Facebook · Instagram · LinkedIn</p>
+        <p>© 2026 Дмитро</p>
     </footer>
-
-    <a class="figma-link" href="https://www.figma.com/community/file/1498104705519758813/minimalist-model-portfolio">Шаблон Figma ↗</a>
 </body>
 </html>
